@@ -12,8 +12,12 @@ export const generateMetadata = ({
     },
     {
       rel: 'icon',
-      sizes: '32x32',
-      url: '/favicon-32x32.png',
+      url: '/favicon.ico',
+    },
+    {
+      rel: 'icon',
+      sizes: '96x96',
+      url: '/favicon-96x96.png',
     },
     {
       rel: 'icon',
