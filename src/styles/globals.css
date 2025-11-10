@@ -13,8 +13,8 @@
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
+    --primary: 0 79% 57%;
+    --primary-foreground: 0 85.7% 97.3%;
 
     --secondary: 0 0% 14.9%;
     --secondary-foreground: 0 0% 98%;
@@ -33,6 +33,13 @@
     --ring: 0 0% 83.1%;
 
     --radius: 0.5rem;
+
+    --custom-gradient: linear-gradient(
+      90deg,
+      rgba(131, 58, 180, 1) 0%,
+      rgba(253, 29, 29, 1) 50%,
+      rgba(252, 176, 69, 1) 100%
+    );
   }
 
   .dark {
@@ -45,8 +52,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
 
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 0 79% 57%;
+    --primary-foreground: 0 85.7% 97.3%;
 
     --secondary: 0 0% 96.1%;
     --secondary-foreground: 0 0% 9%;
@@ -104,13 +111,14 @@ body {
 
 .gradient {
   background: conic-gradient(
-    from 230.29deg at 51.63% 52.16%,
-    rgb(36, 0, 255) 0deg,
-    rgb(0, 135, 255) 67.5deg,
-    rgb(108, 39, 157) 198.75deg,
-    rgb(24, 38, 163) 251.25deg,
-    rgb(54, 103, 196) 301.88deg,
-    rgb(105, 30, 255) 360deg
+    from 230deg at 51% 52%,
+    #e83b3b 0deg,
+    /* bright red */ #c53030 60deg,
+    /* dark red */ #ff6b6b 150deg,
+    /* pinkish red */ #b83232 210deg,
+    /* deep red */ #ff4c4c 270deg,
+    /* vivid red */ #e83b3b 320deg,
+    /* loop back to bright red */ #c53030 360deg /* complete circle */
   );
 }
 

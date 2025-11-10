@@ -15,7 +15,7 @@ import MagicBadge from '@/components/ui/magic-badge';
 import MagicCard from '@/components/ui/magic-card';
 import { COMPANIES, PROCESS } from '@/utils';
 import { REVIEWS } from '@/utils/constants/misc';
-import { ArrowRightIcon, CreditCardIcon, StarIcon } from 'lucide-react';
+import { ArrowRightIcon, StarIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -28,7 +28,7 @@ const HomePage = async () => {
           <AnimationContainer className="flex flex-col items-center justify-center w-full text-center">
             <h1 className="text-foreground text-center py-6 text-5xl font-medium tracking-normal text-balance sm:text-6xl md:text-7xl lg:text-8xl !leading-[1.15] w-full font-heading">
               Smart Links with{' '}
-              <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text inline-bloc">
+              <span className="text-transparent bg-gradient-to-r from-primary to-fuchsia-500 bg-clip-text inline-bloc">
                 Precision
               </span>
             </h1>
