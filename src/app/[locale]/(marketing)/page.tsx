@@ -1,4 +1,5 @@
 import { AnimationContainer, MaxWidthWrapper } from '@/components';
+import AboutUs from '@/components/sections/about-us';
 import { BentoCard, BentoGrid, CARDS } from '@/components/ui/bento-grid';
 import { BorderBeam } from '@/components/ui/border-beam';
 import { Button } from '@/components/ui/button';
@@ -157,6 +158,8 @@ const HomePage = async () => {
           ))}
         </div>
       </MaxWidthWrapper>
+
+      <AboutUs />
 
       {/* Reviews Section */}
       <MaxWidthWrapper className="py-10">
