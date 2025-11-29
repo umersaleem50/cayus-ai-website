@@ -1,6 +1,7 @@
 import { AnimationContainer, EmailCTA, MaxWidthWrapper } from '@/components';
 import AboutUs from '@/components/sections/about-us';
 import Features from '@/components/sections/features';
+import Solution from '@/components/sections/solution';
 import Testimonials from '@/components/sections/testimonials';
 import TheProblem from '@/components/sections/the-problem';
 import TrustedBrands from '@/components/sections/trusted-brands';
@@ -60,6 +61,9 @@ const HomePage = async ({ params }: { params: { locale: string } }) => {
 
       {/* Process Section */}
       <TheProblem />
+
+      {/* Solution Section */}
+      <Solution />
 
       {/* Companies Section */}
       <TrustedBrands />
