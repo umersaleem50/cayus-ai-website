@@ -11,6 +11,7 @@ import {
 } from '@/components/ui/navigation-menu';
 import { cn, NAV_LINKS } from '@/utils';
 import { LucideIcon } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import AnimationContainer from '../global/animation-container';
@@ -47,7 +48,12 @@ const Navbar = () => {
         <MaxWidthWrapper className="flex items-center justify-between z-10">
           <div className="flex items-center space-x-12">
             <Link href="/#home">
-              <span className="text-lg font-bold font-heading !leading-none">Cayus AI</span>
+              <Image
+                src={'/logos/cayus-logo-fullx150.png'}
+                width={110}
+                height={30}
+                alt="Cayus Logo"
+              />
             </Link>
 
             <NavigationMenu className="hidden lg:flex">

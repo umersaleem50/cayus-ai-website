@@ -1,5 +1,6 @@
-import { AnimationContainer, Icons } from '@/components';
+import { AnimationContainer } from '@/components';
 import { TextHoverEffect } from '@/components/ui/text-hover-effect';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -11,7 +12,12 @@ const Footer = () => {
         <AnimationContainer delay={0.1}>
           <div className="flex flex-col items-start justify-start md:max-w-[200px]">
             <div className="flex items-start">
-              <Icons.logo className="w-7 h-7" />
+              <Image
+                src={'/logos/cayus-logo-full.png'}
+                width={100}
+                height={80}
+                alt="Cayus Icon Logo"
+              />
             </div>
             <p className="text-muted-foreground mt-4 text-sm text-start">
               Manage your links with ease.
