@@ -33,11 +33,11 @@ function Solution() {
             }
             background={
               <Image
-                src={'/app_images/managers-graph.png'}
+                src={'/app_images/managers-graph-2.png'}
                 alt="Suggestions For Managers"
                 height={352}
                 width={552}
-                className="absolute left-0 -top-16 origin-top rounded-md border border-border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_20%,#000_60%)] group-hover:scale-105"
+                className="absolute left-0 top-0 origin-top rounded-md border border-border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_20%,#000_60%)] group-hover:scale-105"
               />
             }
           />
