@@ -1,4 +1,4 @@
-import { aboutUs } from './aboutUs';
+import { aboutUs } from './about-us';
 import { features } from './features';
 import { getStarted } from './getStarted';
 import { hero } from './hero';
