@@ -27,7 +27,7 @@ export const features = {
   'feature.title': 'Gérez les liens comme un pro',
   'feature.description':
     'Cayus est un outil puissant de gestion de liens qui vous aide à raccourcir, suivre et organiser tous vos liens en un seul endroit.',
-
+  'feature.buttonCTA': 'Découvrir',
   ...features_card1,
   ...features_card2,
   ...features_card3,
