@@ -8,7 +8,11 @@ import { Integrations } from '../ui/integrations';
 import { Label } from '../ui/label';
 
 async function FeatureCards() {
-  const featureCardT = await getScopedI18n('feature.card');
+  const [featureCardT, featureT] = await Promise.all([
+    getScopedI18n('feature.card'),
+    getScopedI18n('feature'),
+  ]);
+
   return (
     <>
       <BentoCard
@@ -16,7 +20,7 @@ async function FeatureCards() {
         name={featureCardT('1.name')}
         description={featureCardT('1.description')}
         href="#"
-        cta="Learn more"
+        cta={featureT('buttonCTA')}
         className="col-span-3 lg:col-span-1"
         background={
           <Card className="absolute top-10 left-10 origin-top rounded-none rounded-tl-md transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105 border border-border border-r-0">
@@ -41,8 +45,8 @@ async function FeatureCards() {
         Icon={SearchIcon}
         name={featureCardT('2.name')}
         description={featureCardT('2.description')}
-        href="#"
-        cta="Learn more"
+        href={'#'}
+        cta={featureT('buttonCTA')}
         className="col-span-3 lg:col-span-2"
         background={
           <Card className="absolute top-10 left-10 origin-top rounded-none rounded-tl-md transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105 border border-border border-r-0">
@@ -68,7 +72,7 @@ async function FeatureCards() {
         name={featureCardT('3.name')}
         description={featureCardT('3.description')}
         href="#"
-        cta="Learn more"
+        cta={featureT('buttonCTA')}
         className="col-span-3 lg:col-span-2 max-w-full overflow-hidden"
         background={
           <Integrations className="absolute right-2 pl-28 md:pl-0 top-4 h-[300px] w-[600px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
@@ -79,7 +83,7 @@ async function FeatureCards() {
         name={featureCardT('4.name')}
         description={featureCardT('4.description')}
         href="#"
-        cta="Learn more"
+        cta={featureT('buttonCTA')}
         className="col-span-3 lg:col-span-1"
         background={
           <Calendar

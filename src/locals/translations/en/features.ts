@@ -27,7 +27,7 @@ export const features = {
   'feature.title': 'Manage Links Like a Pro',
   'feature.description':
     'Cayus is a powerful link management tool that helps you shorten, track, and organize all your links in one place.',
-
+  'feature.buttonCTA': 'Learn more',
   ...features_card1,
   ...features_card2,
   ...features_card3,
