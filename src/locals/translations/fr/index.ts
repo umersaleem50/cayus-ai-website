@@ -6,6 +6,7 @@ import { getStarted } from './getStarted';
 import { hero } from './hero';
 import { navbar } from './navbar';
 import { problem } from './problem';
+import { solution } from './solution';
 import { testimonials } from './testimonials';
 import { trustedBy } from './trusted-by';
 
@@ -14,6 +15,7 @@ const frTranslation = {
   ...hero,
   ...getStarted,
   ...problem,
+  ...solution,
   ...aboutUs,
   ...trustedBy,
   ...features,
