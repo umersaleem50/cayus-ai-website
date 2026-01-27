@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { aboutUs } from './about-us';
 import { cta } from './cta';
 import { features } from './features';
@@ -21,20 +20,7 @@ const frTranslation = {
   ...testimonials,
   ...cta,
   ...footer,
-=======
-import { aboutUs } from './aboutUs';
-import { getStarted } from './getStarted';
-import { hero } from './hero';
-import { navbar } from './navbar';
-import { problem } from './problem';
-
-const frTranslation = {
-  ...navbar,
-  ...hero,
-  ...getStarted,
-  ...problem,
-  ...aboutUs,
->>>>>>> 6de4a03 (refactor translations)
+  ...trustedBy,
 };
 
 export default frTranslation;
