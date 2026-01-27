@@ -25,11 +25,13 @@ const frTranslation = {
 import { aboutUs } from './aboutUs';
 import { getStarted } from './getStarted';
 import { hero } from './hero';
+import { navbar } from './navbar';
 import { problem } from './problem';
 
 const frTranslation = {
-  ...getStarted,
+  ...navbar,
   ...hero,
+  ...getStarted,
   ...problem,
   ...aboutUs,
 >>>>>>> 6de4a03 (refactor translations)
